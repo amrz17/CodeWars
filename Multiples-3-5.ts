@@ -1,4 +1,4 @@
-export class Challenge {
+export default class Challenge {
   static solution(number: number) {
     if (number < 0) {
       return 0;
@@ -8,7 +8,6 @@ export class Challenge {
 
     for (let i = 0; i <= number - 1; i++) {
       if (i % 3 == 0 || i % 5 == 0) {
-        // Jika ya, tambahkan i ke dalam sum
         sum += i;
       }
     }
